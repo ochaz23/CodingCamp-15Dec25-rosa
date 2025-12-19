@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css\style.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <!-- Header Content -->
+    <header class="main-header p-4 flex flex-col md:flex-row justify-between items-center gap-4">
+        <!-- Logo icon -->
+        <div class="logo">
+            <img src="/images/cake11.jpg" alt="Logo" class="h-12 w-auto">
+        </div>
+
+        <nav class="flex flex-wrap justify-center gap-2">
+            <a class="border p-2 rounded text-sm md:text-base" href="#home">Home</a>
+            <a class="border p-2 rounded text-sm md:text-base" href="#our-collection">Our Sweet Collection</a>
+            <a class="border p-2 rounded text-sm md:text-base" href="#our-story">Our Sweet Story</a>
+            <a class="border p-2 rounded text-sm md:text-base" href="#feedbackForm">Message Us</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <section id="home" class="min-h-[500px] text-center content-center">
+            <h1 class="text-3xl font-bold" id="welcome-speech">Welcome</h1>
+            <p class="text-xl">"Celebrate special moments with cakes and chocolates."</p>
+        </section>
+
+        <section id="our-collection" class="max-w-6xl mx-auto px-4 py-10">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-10">Our Sweet Collection</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="/images/cake2.jpg" alt="cake 1" class="w-full h-56 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800">Brownie Bliss</h3>
+                        <p class="text-gray-600 mt-2">Decadent brownie-inspired cake with a fudgy center.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="/images/cake3.jpg" alt="cake 2" class="w-full h-56 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800">Choco Crescent</h3>
+                        <p class="text-gray-600 mt-2">Flaky croissant filled with rich chocolate, perfect for breakfast or snack.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="/images/cake4.jpg" alt="cake 3" class="w-full h-56 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800">Choco Delight</h3>
+                        <p class="text-gray-600 mt-2">Soft chocolate cookie loaded with chocolate chips.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="our-story" class="max-w-4xl mx-auto p-6 flex flex-col gap-6">
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="flex-1 p-5 border border-gray-300 rounded-xl bg-white shadow-sm">
+                    <h3 class="text-lg font-bold mb-3 text-gray-800">Our Sweet Story</h3>
+                    <div class="text-gray-700">
+                        <p>Our dessert shop is dedicated to bringing sweetness and joy to every occasion. We specialize in handcrafted cakes, artisanal chocolates, and delightful treats that make every celebration unforgettable.</p>
+                    </div>
+                </div>
+
+                <div class="flex-1 p-5 border border-gray-300 rounded-xl bg-white shadow-sm">
+                    <h3 class="text-lg font-bold mb-3 text-gray-800">Our Sweet Dream</h3>
+                    <div class="text-gray-700">
+                        <p>To become the most beloved dessert destination, where every bite brings happiness and creates memorable moments for our customers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full p-5 border border-gray-300 rounded-xl bg-white shadow-sm">
+                <h3 class="text-lg font-bold mb-3 text-gray-800">Our Recipe for Happiness</h3>
+                <div class="text-gray-700">
+                    <ul class="list-disc ml-5 space-y-1">
+                        <li>Craft high-quality, delicious desserts using the finest ingredients.</li>
+                        <li>Provide exceptional customer service and a memorable experience for every visitor.</li>
+                        <li>Continuously innovate our offerings to delight and surprise our customers.</li>
+                        <li>Celebrate special moments with creativity, care, and sweetness.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="text-lg font-bold mb-4 text-gray-800">Share Your Sweet Experience</h3>
+            <form id="feedbackForm" class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-600 mb-1">Your Name</label>
+                        <input type="text" id="nama" name="nama" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#A67B5B] focus:border-[#A67B5B] outline-none transition bg-gray-50"
+                            placeholder="Your Name">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-600 mb-1">Your Email</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#A67B5B] focus:border-[#A67B5B] outline-none transition bg-gray-50"
+                            placeholder="Your Email">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-1">Your Message</label>
+                    <textarea id="message" name="message" rows="4" required
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#A67B5B] focus:border-[#A67B5B] outline-none transition bg-gray-50"
+                        placeholder="Tell us what you loved, your experience, or any suggestions!"></textarea>
+                </div>
+
+                <div class="flex justify-end">
+                    <button type="submit" 
+                        class="px-8 py-2.5 bg-[#A67B5B] hover:bg-[#8B654A] text-white font-bold rounded-lg shadow-md transition-all active:scale-95">
+                        Send Your Sweet Thoughts
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer Content -->
+    <footer>
+        <p class="text-center p-4 bg-gray-200">© 2024 My Portofolio. All rights reserved.</p>
+    </footer>
+
+    <!-- JS External -->
+    <script src="js\script.js"></script>
+</body>
+</html>
